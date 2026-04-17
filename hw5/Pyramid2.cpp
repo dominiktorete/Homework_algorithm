@@ -54,6 +54,7 @@ int main() {
 	std::string command{};
 	do {
 		print_element(arr, index_user, 0, size);
+		std::cout << "Enter command: ";
 		std::getline(std::cin, command);
 		std::transform(command.begin(), command.end(), command.begin(), ::tolower);
 		if (command == "up") {
