@@ -1,11 +1,12 @@
 #include <iostream>
 
 void print_pyramid(int* arr, int index, int size) {
+	int level{};
+	if (index == 0) {
+		std::cout << level << " root " << arr[index] << '\n';
+	}
 	if ((index * 2) + 1 < size) {
-		int level{};
-		if (index == 0) {
-			std::cout << level << " root " << arr[index] << '\n';
-		}
+	
 		for (int i = index * 2 + 1; i > 0; i = (i - 1) / 2) {
 			level++;
 		}
